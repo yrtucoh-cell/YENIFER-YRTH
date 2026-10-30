@@ -1,0 +1,49 @@
+{
+  "nombre": "Mente y Dinero",
+  "usuario": "@menteydinero",
+  "cta_texto": "SÍGUEME",
+  "colores": {
+    "fondo": "#0A0F0D",
+    "fondo2": "#13241B",
+    "acento": "#22C55E",
+    "resalte": "#FACC15",
+    "texto": "#FFFFFF",
+    "palabra_clave": "#4ADE80"
+  },
+  "fuentes": {
+    "subtitulos": [
+      "Montserrat:style=ExtraBold",
+      "Anton",
+      "DejaVu Sans:style=Bold"
+    ],
+    "titulos": [
+      "Montserrat:style=Black",
+      "Anton",
+      "DejaVu Sans:style=Bold"
+    ]
+  },
+  "titulos_mayusculas": true,
+  "subtitulos": {
+    "palabras_por_bloque": 3,
+    "caracteres_max": 16,
+    "tamano": 100,
+    "altura": 0.66,
+    "mayusculas": true
+  },
+  "palabras_clave": [
+    "dinero",
+    "gratis",
+    "truco",
+    "nunca",
+    "millones",
+    "cerebro",
+    "doble"
+  ],
+  "hashtags_base": [
+    "#dinero",
+    "#psicologia",
+    "#finanzaspersonales",
+    "#ahorro",
+    "#curiosidades"
+  ]
+}

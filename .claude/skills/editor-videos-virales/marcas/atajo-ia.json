@@ -1,0 +1,54 @@
+{
+  "nombre": "Atajo IA",
+  "usuario": "@atajoia",
+  "cta_texto": "SÍGUEME",
+  "colores": {
+    "fondo": "#0B1020",
+    "fondo2": "#111A3A",
+    "acento": "#3B82F6",
+    "resalte": "#FACC15",
+    "texto": "#FFFFFF",
+    "palabra_clave": "#60A5FA"
+  },
+  "fuentes": {
+    "subtitulos": [
+      "Montserrat:style=ExtraBold",
+      "Montserrat ExtraBold",
+      "Anton",
+      "DejaVu Sans:style=Bold"
+    ],
+    "titulos": [
+      "Montserrat:style=Black",
+      "Anton",
+      "DejaVu Sans:style=Bold"
+    ]
+  },
+  "titulos_mayusculas": true,
+  "subtitulos": {
+    "palabras_por_bloque": 3,
+    "caracteres_max": 16,
+    "tamano": 100,
+    "altura": 0.66,
+    "mayusculas": true
+  },
+  "palabras_clave": [
+    "IA",
+    "gratis",
+    "truco",
+    "oculto",
+    "ChatGPT",
+    "Gemini",
+    "Claude",
+    "Google",
+    "estafa",
+    "nunca",
+    "segundos"
+  ],
+  "hashtags_base": [
+    "#inteligenciaartificial",
+    "#ia",
+    "#tecnologia",
+    "#trucos",
+    "#productividad"
+  ]
+}

@@ -20,6 +20,8 @@ por vistas y, después, por afiliados y patrocinios.
 | [guiones/semana-1.md](guiones/semana-1.md) | 7 guiones listos para grabar con voz IA |
 | [guiones/video-largo-1.md](guiones/video-largo-1.md) | Primer video largo de YouTube (8–10 min) |
 | [plantillas.md](plantillas.md) | Fórmulas de ganchos, títulos, descripciones y hashtags |
+| [COMO-ENTREGAR-AUDIOS.md](COMO-ENTREGAR-AUDIOS.md) | Cómo grabar y entregar audios para que se editen los videos |
+| [.claude/skills/editor-videos-virales](.claude/skills/editor-videos-virales/SKILL.md) | Skill que edita los videos automáticamente |
 
 ## Resumen en 30 segundos
 
