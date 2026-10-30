@@ -1,5 +1,13 @@
 # Red de Contenido Viral — YouTube · TikTok · Instagram
 
+> **Nicho activo: Tecnología / IA → carpeta [`tecnologia-ia/`](tecnologia-ia/)**
+> - [Estrategia y sistema de crecimiento](tecnologia-ia/estrategia.md)
+> - [Calendario de 30 días](tecnologia-ia/calendario-30-dias.md)
+> - [Guiones de la semana 1](tecnologia-ia/guiones/semana-1.md) · [Primer video largo](tecnologia-ia/guiones/video-largo-1.md)
+> - [Análisis del nicho de dibujos animados para niños](analisis-nicho-infantil.md)
+>
+> El plan de abajo ("Mente y Dinero") queda como **segundo nicho** de reserva.
+
 Plan para lanzar **una marca de contenido sin rostro (faceless)** en español, publicada a la vez en
 YouTube (Shorts + videos largos), TikTok e Instagram Reels, con el objetivo de generar ingresos
 por vistas y, después, por afiliados y patrocinios.
