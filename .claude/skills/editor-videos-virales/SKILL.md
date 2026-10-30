@@ -1,6 +1,6 @@
 ---
 name: editor-videos-virales
-description: Edita videos verticales virales (TikTok, Reels, Shorts) a partir de los audios de narración que entrega la usuaria y de los guiones del repo (tecnologia-ia/guiones, guiones/). Limpia el audio y recorta pausas, sincroniza subtítulos palabra por palabra, inserta grabaciones de pantalla en las marcas [PANTALLA], crea tarjetas de texto, zooms, efectos de sonido, barra de progreso, música con ducking y CTA final, y exporta 1080x1920 a -14 LUFS con portada, .srt y textos para publicar. Usar cuando diga "edita el video", "aquí está el audio del día N", "haz el video de este guion", "versión corta/Shorts", o entregue un audio de narración.
+description: Edita videos verticales virales (TikTok, Reels, Shorts) a partir de los audios de narración que entrega la usuaria y de los guiones del repo (canal/guiones, guiones/). Limpia el audio y recorta pausas, sincroniza subtítulos palabra por palabra, inserta grabaciones de pantalla en las marcas [PANTALLA], crea tarjetas de texto, zooms, efectos de sonido, barra de progreso, música con ducking y CTA final, y exporta 1080x1920 a -14 LUFS con portada, .srt y textos para publicar. Usar cuando diga "edita el video", "aquí está el audio del día N", "haz el video de este guion", "versión corta/Shorts", o entregue un audio de narración.
 ---
 
 # Editor de videos virales
@@ -13,7 +13,7 @@ lee `referencias/formatos-virales.md`: explica qué formato usar y por qué func
 | Entrada | Obligatorio | Dónde suele estar |
 |---|---|---|
 | Audio de la narración (m4a, mp3, wav, ogg/opus de WhatsApp, o un video del que se usa el audio) | Sí | `entradas/dia-N/` o archivo subido |
-| Qué guion es (archivo + día) | Recomendado | `tecnologia-ia/guiones/semana-1.md`, día N |
+| Qué guion es (archivo + día) | Recomendado | `canal/guiones/semana-1.md`, día N |
 | Grabaciones de pantalla, en el orden de las marcas `[PANTALLA]` del guion (`01.mp4`, `02.mp4`…) | Para guiones con [PANTALLA] | `entradas/dia-N/clips/` |
 | B-roll (videos o imágenes de apoyo) | Opcional | `entradas/dia-N/broll/` o `entradas/broll/` |
 | Música sin copyright (Biblioteca de audio de YouTube) | Opcional | `entradas/musica/` |
@@ -36,13 +36,13 @@ ofrece renderizar igualmente (esas partes usan tarjetas) o esperar las grabacion
    ```bash
    python .claude/skills/editor-videos-virales/scripts/editar.py \
      --audio entradas/dia-1/voz.m4a \
-     --guion tecnologia-ia/guiones/semana-1.md --dia 1 \
+     --guion canal/guiones/semana-1.md --dia 1 \
      --clips entradas/dia-1/clips --broll entradas/broll --musica entradas/musica/tema.mp3 \
-     --marca atajo-ia --ambas --salida videos
+     --marca dato-mental --ambas --salida videos
    ```
    - `--ambas`: versión **completa** (TikTok, más de 1 min, válida para Creator Rewards) y **corta**
      (sin los bloques ✂️, para Shorts/Reels). `--corta` solo la corta.
-   - `--marca`: `atajo-ia` o `mente-y-dinero` (archivos en `marcas/`).
+   - `--marca`: `dato-mental` (canal principal) o `mente-y-dinero` (archivos en `marcas/`).
    - `--solo-plan`: se detiene tras crear `plan.json` para revisarlo.
    - `--borrador`: render rápido de baja calidad.
    - `--pausa-max 0.35`: pausa máxima en segundos (más bajo = ritmo más rápido; 0,25 a 0,45).

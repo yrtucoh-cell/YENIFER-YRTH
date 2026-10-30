@@ -5,7 +5,7 @@ palabra por palabra, gancho, efectos de sonido y música. Se puede revisar y edi
 de renderizar.
 
 Uso: python armar_plan.py palabras.json --guion guion.json --voz voz.wav [--clips DIR]
-       [--broll DIR] [--musica ARCHIVO] [--marca atajo-ia] [--corta] [-o plan.json]
+       [--broll DIR] [--musica ARCHIVO] [--marca dato-mental] [--corta] [-o plan.json]
 """
 import argparse
 import math
@@ -137,7 +137,7 @@ def subtitulos(palabras, marca):
     return res
 
 
-def armar(datos, guion, voz, clips_dir=None, broll_dir=None, musica=None, marca_nombre="atajo-ia",
+def armar(datos, guion, voz, clips_dir=None, broll_dir=None, musica=None, marca_nombre="dato-mental",
           corta=False):
     marca = cargar_marca(marca_nombre)
     palabras = [dict(p) for p in datos["palabras"]]
@@ -278,7 +278,7 @@ def main():
     ap.add_argument("--clips", help="Carpeta con grabaciones de pantalla (en el orden de las marcas [PANTALLA])")
     ap.add_argument("--broll", help="Carpeta con videos/imágenes de apoyo")
     ap.add_argument("--musica")
-    ap.add_argument("--marca", default="atajo-ia")
+    ap.add_argument("--marca", default="dato-mental")
     ap.add_argument("--corta", action="store_true", help="Quitar los bloques ✂️ (versión Shorts/Reels)")
     ap.add_argument("-o", "--salida", default="plan.json")
     a = ap.parse_args()

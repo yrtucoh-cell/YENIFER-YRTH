@@ -14,12 +14,13 @@
 
 | Formato | Para qué nicho | Estructura | Cómo lo hace el editor |
 |---|---|---|---|
-| **Tutorial de pantalla con voz** | Atajo IA | Gancho → resultado → pasos → advertencia → CTA | Clips en marcas `[PANTALLA]`, zoom suave hacia el `foco`, subtítulos por encima |
+| **Tutorial de pantalla con voz** | Dato Mental (IA, tecnología) | Gancho → resultado → pasos → advertencia → CTA | Clips en marcas `[PANTALLA]`, zoom suave hacia el `foco`, subtítulos por encima |
 | **Lista numerada** ("3 pistas…", "fórmula de 4 partes") | Ambos | Gancho → ítem 1, 2, 3 → resumen | Tarjeta `lista` con número grande + sonido *ding* por ítem |
 | **Micro-educación** (dato + explicación) | Ambos | Dato sorprendente → por qué → ejemplo → consejo | Tarjeta `concepto` con el término clave en negrita del guion |
-| **Historia/narración** | Mente y Dinero | Gancho con giro → contexto → giro → lección | B-roll alternado + palabras clave grandes |
+| **Historia/narración** | Dato Mental (datos), Mente y Dinero | Gancho con giro → contexto → giro → lección | B-roll alternado + palabras clave grandes |
 | **Serie por partes** ("Parte 1/2") | Ambos | Cliffhanger al final | CTA "Sígueme para la parte 2" en la tarjeta final |
-| **Alerta / seguridad** | Atajo IA | Situación → señales → cómo protegerte | Lista + resaltado de "nunca", "estafa"… |
+| **Alerta / seguridad** | Dato Mental (tecnología) | Situación → señales → cómo protegerte | Lista + resaltado de "nunca", "estafa"… |
+| **Experimento mental / paradoja** | Dato Mental (filosofía) | Pregunta imposible → historia del filósofo → giro → "¿tú qué piensas?" | Arte de dominio público como B-roll + palabras clave grandes + pregunta final para comentarios |
 | **Respuesta a comentario** | Ambos | Comentario en pantalla → respuesta | Se hace en la app (TikTok/IG "responder con video") sobre el video exportado |
 
 ## Recursos de edición incluidos (y por qué)

@@ -1,9 +1,10 @@
 # Red de Contenido Viral — YouTube · TikTok · Instagram
 
-> **Nicho activo: Tecnología / IA → carpeta [`tecnologia-ia/`](tecnologia-ia/)**
-> - [Estrategia y sistema de crecimiento](tecnologia-ia/estrategia.md)
-> - [Calendario de 30 días](tecnologia-ia/calendario-30-dias.md)
-> - [Guiones de la semana 1](tecnologia-ia/guiones/semana-1.md) · [Primer video largo](tecnologia-ia/guiones/video-largo-1.md)
+> **Canal activo: "Dato Mental" (IA · Tecnología · Filosofía · Datos) → carpeta [`canal/`](canal/)**
+> - [Estrategia del canal](canal/estrategia.md) · [Calendario de 30 días](canal/calendario-30-dias.md)
+> - Guiones: [semana 1](canal/guiones/semana-1.md) · [semana 2](canal/guiones/semana-2.md) ·
+>   [video largo 1](canal/guiones/video-largo-1.md) · [video largo 2](canal/guiones/video-largo-2.md)
+> - [Kit de marca: logo, banner, miniaturas y biografías](canal/marca/biografias.md)
 > - [Análisis del nicho de dibujos animados para niños](analisis-nicho-infantil.md)
 >
 > El plan de abajo ("Mente y Dinero") queda como **segundo nicho** de reserva.

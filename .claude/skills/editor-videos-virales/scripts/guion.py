@@ -1,4 +1,4 @@
-"""Lee un guion en Markdown (formato de tecnologia-ia/guiones/semana-*.md) y extrae la narración.
+"""Lee un guion en Markdown (formato de canal/guiones/semana-*.md) y extrae la narración.
 
 Uso:
   python guion.py ARCHIVO.md --dia 1 [-o guion.json]
@@ -13,7 +13,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 from comun import escribir_json, error, sin_emojis  # noqa: E402
 
 TOKEN = re.compile(r"(\*\*\[PANTALLA[^\]]*\]\*\*|\[PANTALLA[^\]]*\]|\*\*|✂️|✂)")
-META = ("**[VISUAL]**", "**Hashtags:**", "**Nota:**", "**Texto en pantalla:**", "**Formato:**")
+META = ("**[VISUAL]**", "**Hashtags:**", "**Nota:**", "**Texto en pantalla:**", "**Formato:**", "**Fuentes:**",
+        "**Fuente:**")
 
 
 def secciones(md):
@@ -51,6 +52,11 @@ def palabras_de(lineas, item_de_linea):
                 recorte = not recorte
                 continue
             texto = sin_emojis(parte.replace("*", ""))
+            # Puntuación pegada a una negrita ("**tú**?") se une a la palabra anterior.
+            m = re.match(r"^([^\w\s¿¡\"“(]+)(.*)", texto)
+            if m and palabras and not parte[:1].isspace():
+                palabras[-1]["texto"] += m.group(1)
+                texto = m.group(2)
             for w in texto.split():
                 palabras.append({
                     "texto": w, "negrita": negrita, "recortable": recorte, "cta": es_cta,

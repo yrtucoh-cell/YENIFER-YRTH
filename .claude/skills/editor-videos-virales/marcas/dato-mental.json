@@ -1,6 +1,6 @@
 {
-  "nombre": "Atajo IA",
-  "usuario": "@atajoia",
+  "nombre": "Dato Mental",
+  "usuario": "@datomental",
   "cta_texto": "SÍGUEME",
   "colores": {
     "fondo": "#0B1020",
@@ -42,13 +42,28 @@
     "Google",
     "estafa",
     "nunca",
-    "segundos"
+    "segundos",
+    "Platón",
+    "Sócrates",
+    "filósofo",
+    "paradoja",
+    "cerebro",
+    "realidad",
+    "verdad",
+    "historia",
+    "secreto"
   ],
   "hashtags_base": [
-    "#inteligenciaartificial",
-    "#ia",
+    "#datosinteresantes",
+    "#filosofia",
     "#tecnologia",
-    "#trucos",
-    "#productividad"
-  ]
+    "#inteligenciaartificial",
+    "#curiosidades"
+  ],
+  "pilares": {
+    "IA": "#3B82F6",
+    "Tecnología": "#06B6D4",
+    "Filosofía": "#A855F7",
+    "Datos": "#FACC15"
+  }
 }

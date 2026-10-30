@@ -1,4 +1,4 @@
-# Guiones · Semana 1 · Atajo IA
+# Guiones · Semana 1 · Dato Mental
 
 Cada guion dura ~60–75 s leído (válido para TikTok Creator Rewards). Para Shorts/Reels, quita los
 bloques marcados ✂️.
@@ -166,7 +166,7 @@ Lo configuras una vez y lo usas siempre.
 ## Prompt para generar más guiones
 
 ```
-Eres guionista del canal faceless "Atajo IA" (trucos de IA y tecnología en español neutro, tuteo).
+Eres guionista del canal faceless "Dato Mental" (IA, tecnología, filosofía y datos interesantes, en español neutro, tuteo).
 Escribe un guion de 150–170 palabras (≈70 s) sobre: [TEMA].
 Estructura: gancho de 1 frase (máx. 15 palabras) → pasos concretos que se puedan mostrar grabando
 la pantalla, marcados con [PANTALLA] → ejemplo práctico → advertencia o límite honesto → CTA.

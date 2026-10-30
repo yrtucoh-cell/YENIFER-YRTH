@@ -1,9 +1,9 @@
 """Edita un video vertical completo: audio → tiempos → plan → render.
 
 Uso:
-  python editar.py --audio dia1.m4a --guion tecnologia-ia/guiones/semana-1.md --dia 1
+  python editar.py --audio dia1.m4a --guion canal/guiones/semana-1.md --dia 1
                    [--clips grabaciones/dia1] [--broll broll/] [--musica musica.mp3]
-                   [--marca atajo-ia] [--salida videos/] [--corta] [--ambas] [--solo-plan] [--borrador]
+                   [--marca dato-mental] [--salida videos/] [--corta] [--ambas] [--solo-plan] [--borrador]
 
 --corta   quita los bloques ✂️ del guion (versión para Shorts/Reels)
 --ambas   genera la versión completa (TikTok, +1 min) y la corta
@@ -47,7 +47,7 @@ def main():
     ap.add_argument("--clips")
     ap.add_argument("--broll")
     ap.add_argument("--musica")
-    ap.add_argument("--marca", default="atajo-ia")
+    ap.add_argument("--marca", default="dato-mental")
     ap.add_argument("--salida", default="videos")
     ap.add_argument("--nombre", help="Nombre de la carpeta de salida")
     ap.add_argument("--corta", action="store_true")
