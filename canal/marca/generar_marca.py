@@ -1,7 +1,8 @@
 """Genera el kit visual del canal a partir de la marca del editor de videos.
 
 Uso (desde la raíz del repo): python canal/marca/generar_marca.py [--marca dato-mental]
-Crea: logo.png (800x800), banner-youtube.png (2560x1440) y miniaturas de ejemplo (1280x720).
+Crea: banner-youtube.png (2560x1440) y miniaturas de ejemplo (1280x720).
+El logo está en logos/ (python canal/marca/logos/generar_logos.py).
 Si cambias el nombre, el usuario o los colores en
 .claude/skills/editor-videos-virales/marcas/<marca>.json, vuelve a ejecutarlo.
 """
@@ -148,7 +149,6 @@ def main():
     m = cargar_marca(a.marca)
     fuente, _ = buscar_fuente(m["fuentes"]["titulos"])
     fuente_texto, _ = buscar_fuente(m["fuentes"]["subtitulos"])
-    logo(m, fuente).save(AQUI / "logo.png")
     banner(m, fuente, fuente_texto).save(AQUI / "banner-youtube.png")
     ejemplos = [
         ("miniatura-video-1.png", ["10 USOS", "DE LA IA"], "IA", "IA", "AI"),

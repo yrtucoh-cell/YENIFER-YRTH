@@ -1,10 +1,16 @@
 # Kit de perfil · Dato Mental
 
-Imágenes de esta carpeta (se regeneran con `python canal/marca/generar_marca.py`):
+**Logos:** 6 propuestas en [`logos/`](logos/) — mira `logos/comparativa.png`. Cada una tiene versión
+`-icono.png` (1024×1024, foto de perfil) y `-horizontal.png` (2000×600, para cabeceras, firma de correo
+y final de los videos largos). `logo.png` es la propuesta elegida (por defecto la 1, "Monograma D.");
+para cambiarla, copia otro `-icono.png` encima de `logo.png`.
+
+Imágenes de esta carpeta (se regeneran con `python canal/marca/generar_marca.py` y
+`python canal/marca/logos/generar_logos.py`):
 
 | Archivo | Dónde se usa | Tamaño |
 |---|---|---|
-| `logo.png` | Foto de perfil en YouTube, TikTok e Instagram (se recorta en círculo) | 800×800 |
+| `logo.png` | Foto de perfil en YouTube, TikTok e Instagram (se recorta en círculo) | 1024×1024 |
 | `banner-youtube.png` | Banner del canal de YouTube (el texto está dentro de la zona segura de 1546×423) | 2560×1440 |
 | `miniatura-video-1.png` | Miniatura: "10 usos de la IA…" | 1280×720 |
 | `miniatura-video-2.png` | Miniatura: "5 experimentos mentales…" | 1280×720 |

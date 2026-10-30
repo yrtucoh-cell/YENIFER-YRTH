@@ -12,12 +12,13 @@
   },
   "fuentes": {
     "subtitulos": [
+      "Inter:style=ExtraBold",
       "Montserrat:style=ExtraBold",
-      "Montserrat ExtraBold",
       "Anton",
       "DejaVu Sans:style=Bold"
     ],
     "titulos": [
+      "Inter:style=Black",
       "Montserrat:style=Black",
       "Anton",
       "DejaVu Sans:style=Bold"
