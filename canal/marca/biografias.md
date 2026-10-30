@@ -1,9 +1,19 @@
 # Kit de perfil · Dato Mental
 
-**Logos:** 6 propuestas en [`logos/`](logos/) — mira `logos/comparativa.png`. Cada una tiene versión
-`-icono.png` (1024×1024, foto de perfil) y `-horizontal.png` (2000×600, para cabeceras, firma de correo
-y final de los videos largos). `logo.png` es la propuesta elegida (por defecto la 1, "Monograma D.");
-para cambiarla, copia otro `-icono.png` encima de `logo.png`.
+**Logo elegido: "D." (Monograma).** Archivos listos en [`logo-final/`](logo-final/):
+
+| Archivo | Dónde se usa |
+|---|---|
+| `perfil-youtube-800.png` | Foto de perfil de YouTube (800×800) |
+| `perfil-tiktok-instagram-400.png` | Foto de perfil de TikTok e Instagram |
+| `perfil-1024.png` | Versión grande (Linktree, Facebook, correo) |
+| `marca-de-agua-youtube-150.png` | YouTube Studio → Personalización → Marca de agua del video (aparece en la esquina y suscribe con un clic) |
+| `icono-transparente.png` | Sobre fotos o videos oscuros, final de los videos |
+| `icono-para-fondo-claro.png` | Sobre fondos blancos (documentos, presentaciones) |
+| `horizontal-fondo-oscuro.png` / `-fondo-claro.png` / `-transparente.png` | Cabeceras, firma de correo, kit para marcas, final de los videos largos |
+
+Las otras 5 propuestas siguen en [`logos/`](logos/) por si algún día quieres cambiar.
+Para regenerar: `python canal/marca/logos/generar_logos.py --final`.
 
 Imágenes de esta carpeta (se regeneran con `python canal/marca/generar_marca.py` y
 `python canal/marca/logos/generar_logos.py`):

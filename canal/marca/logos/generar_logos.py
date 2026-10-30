@@ -1,11 +1,13 @@
 """Genera 6 propuestas de logo para Dato Mental.
 
 Uso (desde la raíz del repo): python canal/marca/logos/generar_logos.py
+     python canal/marca/logos/generar_logos.py --final   (paquete del logo elegido, en canal/marca/logo-final/)
 Crea, por cada propuesta: <n>-<nombre>-icono.png (1024x1024, foto de perfil) y
 <n>-<nombre>-horizontal.png (2000x600, icono + nombre), más comparativa.png con todas.
 Se dibuja a 4x y se reduce para que los bordes queden suaves.
 """
 import math
+import sys
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
@@ -220,5 +222,51 @@ def main():
     print("Logos generados en", AQUI)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__" and "--final" not in sys.argv:
     main()
+
+
+# ---------------------------------------------------------------- logo elegido: paquete final
+
+def monograma_transparente(color_d=BLANCO, color_aro=AZUL, aro=True):
+    img = Image.new("RGBA", (S, S), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    if aro:
+        circulo(d, S / 2, S / 2, S * 0.46, outline=color_aro, width=int(S * 0.032))
+    x0, y0, x1, y1 = centrar_texto(d, "D", f(NEGRA, S * 0.56), S * 0.47, S * 0.50, color_d)
+    r = S * 0.065
+    circulo(d, x1 + r * 1.35, y1 - r, r, fill=AMARILLO)
+    return img
+
+
+def horizontal_final(fondo, color_dato, color_mental, color_d):
+    W, H = 2000, 600
+    img = Image.new("RGBA", (W, H), fondo)
+    img.alpha_composite(monograma_transparente(color_d=color_d).resize((440, 440), Image.LANCZOS), (80, 80))
+    d = ImageDraw.Draw(img)
+    d.text((590, 95), "DATO", font=f(NEGRA, 190), fill=color_dato)
+    d.text((590, 280), "MENTAL", font=f(NEGRA, 190), fill=color_mental)
+    ancho = d.textlength("MENTAL", font=f(NEGRA, 190))
+    circulo(d, 590 + ancho + 40, 280 + 170, 26, fill=AMARILLO)
+    return img
+
+
+def paquete_final():
+    dst = AQUI.parent / "logo-final"
+    dst.mkdir(exist_ok=True)
+    perfil = p1_monograma()
+    for tam, nombre in ((1024, "perfil-1024.png"), (800, "perfil-youtube-800.png"),
+                        (400, "perfil-tiktok-instagram-400.png")):
+        perfil.resize((tam, tam), Image.LANCZOS).save(dst / nombre)
+    monograma_transparente().resize((1024, 1024), Image.LANCZOS).save(dst / "icono-transparente.png")
+    monograma_transparente(color_d=FONDO).resize((1024, 1024), Image.LANCZOS).save(dst / "icono-para-fondo-claro.png")
+    # Marca de agua de YouTube: 150x150, sin aro, blanca (YouTube la muestra semitransparente).
+    monograma_transparente(aro=False).resize((150, 150), Image.LANCZOS).save(dst / "marca-de-agua-youtube-150.png")
+    horizontal_final(FONDO + (255,), BLANCO, AZUL, BLANCO).save(dst / "horizontal-fondo-oscuro.png")
+    horizontal_final((255, 255, 255, 255), FONDO, AZUL, FONDO).save(dst / "horizontal-fondo-claro.png")
+    horizontal_final((0, 0, 0, 0), BLANCO, AZUL, BLANCO).save(dst / "horizontal-transparente.png")
+    print("Paquete final del logo en", dst)
+
+
+if __name__ == "__main__" and "--final" in sys.argv:
+    paquete_final()
